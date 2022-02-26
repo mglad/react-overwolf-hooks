@@ -1,3 +1,5 @@
+# react-overwolf-hooks
+
 ## Install
 ```bash
 npm install --save react-overwolf-hooks
