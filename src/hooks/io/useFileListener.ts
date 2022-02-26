@@ -1,5 +1,5 @@
 import { useRef, useEffect, useCallback } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { randomUUID } from 'crypto';
 
 type FileListener = {
   stop: () => void;
@@ -12,7 +12,7 @@ export default function useFileListener(
   encoding: overwolf.io.enums.eEncoding = overwolf.io.enums.eEncoding.UTF8,
   onError: (error: string) => any = () => {},
 ): FileListener {
-  const idRef = useRef(uuidv4());
+  const idRef = useRef(randomUUID());
   useEffect(() => {
     const id = idRef.current;
     overwolf.io.listenOnFile(id, path, { skipToEnd, encoding }, (result) => {
