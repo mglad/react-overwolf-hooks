@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "types": ["@overwolf/types", "node"],
+    "moduleResolution": "node",
+    "outDir": "build",
+    "declaration": true,
+  },
+  "include": ["src"]
+}
