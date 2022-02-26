@@ -23,7 +23,7 @@ export default {
   ],
   plugins: [
     external(),
-    resolve(),
+    resolve({ preferBuiltins: true }),
     typescript({
       rollupCommonJSResolveHack: true,
       clean: true,
