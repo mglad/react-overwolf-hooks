@@ -1,4 +1,5 @@
 # react-overwolf-hooks
+[![NPM](https://img.shields.io/npm/v/react-overwolf-hooks.svg)](https://www.npmjs.com/package/react-overwolf-hooks)
 
 ## Install
 ```bash
